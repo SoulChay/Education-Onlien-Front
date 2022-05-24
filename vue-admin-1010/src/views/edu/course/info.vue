@@ -61,14 +61,12 @@
             <el-input-number :min="0" v-model="courseInfo.lessonNum" controls-position="right" placeholder="请填写课程的总课时数"/>
         </el-form-item>
 
-        <!-- 课程简介 TODO -->
         <!-- 课程简介-->
         <el-form-item label="课程简介">
             <tinymce :height="300" v-model="courseInfo.description"/>
         </el-form-item>
 
 
-        <!-- 课程封面 TODO -->
         <!-- 课程封面-->
         <el-form-item label="课程封面">
 

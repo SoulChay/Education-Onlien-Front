@@ -4,8 +4,8 @@
     <header id="header">
       <section class="container">
         <h1 id="logo">
-          <a href="#" title="谷粒学院">
-            <img src="~/assets/img/logo.png" width="100%" alt="谷粒学院">
+          <a href="#" title="动漫英雄学院">
+            <img src="~/assets/img/logo.png" width="100%" alt="动漫英雄学院">
           </a>
         </h1>
         <div class="h-r-nsl">
@@ -33,8 +33,8 @@
         </a>
     </li>
     <li v-if="loginInfo.id" id="is-login-one" class="mr10">
-        <a id="headerMsgCountId" href="#" title="消息">
-            <em class="icon18 news-icon">&nbsp;</em>
+        <a id="headerMsgCountId" href="#" title="消息" style="display: none">
+            <em class="icon18 news-icon" >&nbsp;</em>
         </a>
         <q class="red-point" style="display: none">&nbsp;</q>
     </li>
@@ -52,17 +52,7 @@
         <a href="javascript:void(0);" title="退出" @click="logout()" class="ml5">退出</a>
     </li>
       <!-- /未登录显示第1 li；登录后显示第2，3 li -->
-          </ul>
-          <aside class="h-r-search">
-            <form action="#" method="post">
-              <label class="h-r-s-box">
-                <input type="text" placeholder="输入你想学的课程" name="queryCourse.courseName" value>
-                <button type="submit" class="s-btn">
-                  <em class="icon18">&nbsp;</em>
-                </button>
-              </label>
-            </form>
-          </aside>
+    </ul>
         </div>
         <aside class="mw-nav-btn">
           <div class="mw-nav-icon"></div>
@@ -83,7 +73,7 @@
           </h4>
           <ul class="of flink-list">
             <li>
-              <a href="http://www.soulchay.com/" title="soulchay" target="_blank">我的博客</a>
+              <a href="http://www.soulchay.com/" title="soulchay" target="_blank">个人博客</a>
             </li>
           </ul>
           <div class="clear"></div>
@@ -92,15 +82,15 @@
           <section class="fl col-7">
             <section class="mr20">
               <section class="b-f-link">
-                <a href="#" title="关于我们" target="_blank">关于我们</a>|
-                <a href="#" title="联系我们" target="_blank">联系我们</a>|
-                <a href="#" title="帮助中心" target="_blank">帮助中心</a>|
-                <a href="#" title="资源下载" target="_blank">资源下载</a>|
-                <span>服务热线：010-56253825(北京) 0755-85293825(深圳)</span>
+                <a href="" title="关于我们" target="">关于我们</a>|
+                <a href="" title="联系我们" target="">联系我们</a>|
+                <a href="" title="帮助中心" target="">帮助中心</a>|
+                <a href="" title="资源下载" target="">资源下载</a>|
+                <span>服务热线：666-66666666(北京)  8888-88888888(深圳)</span>
                 <span>Email：info@1837522825@qq.com</span>
               </section>
               <section class="b-f-link mt10">
-                <span>©2018课程版权均归谷粒学院所有 京ICP备17055252号</span>
+                <span>©2022课程版权均归动漫英雄学院所有 京ICP备17055252号</span>
               </section>
             </section>
           </section>

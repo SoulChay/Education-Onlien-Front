@@ -33,7 +33,7 @@ export default {
             width: '100%',
             height: '500px',
             // 以下可选设置
-            cover: 'http://guli.shop/photo/banner/1525939573202.jpg', // 封面
+            cover: 'https://edu-online-soulchay.oss-cn-beijing.aliyuncs.com/2022/5/banner/banner1.png', // 封面
             qualitySort: 'asc', // 清晰度排序
 
             mediaType: 'video', // 返回音频还是视频

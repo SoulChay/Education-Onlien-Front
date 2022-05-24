@@ -27,12 +27,6 @@
             <section class="c-attr-mt c-attr-undis">
               <span class="c-fff fsize14">主讲： {{courseWebVo.teacherName}}&nbsp;&nbsp;&nbsp;</span>
             </section>
-            <section class="c-attr-mt of">
-              <span class="ml10 vam">
-                <em class="icon18 scIcon"></em>
-                <a class="c-fff vam" title="收藏" href="#" >收藏</a>
-              </span>
-            </section>
             <section  v-if="isbuy || Number(courseWebVo.price) === 0" class="c-attr-mt">
               <a href="#" title="立即观看" class="comm-btn c-btn-3">立即观看</a>
             </section>
@@ -42,29 +36,13 @@
           </section>
         </aside>
         <aside class="thr-attr-box">
-          <ol class="thr-attr-ol">
+          <ol class="thr-attr-ol">     
             <li>
               <p>&nbsp;</p>
               <aside>
                 <span class="c-fff f-fM">购买数</span>
                 <br>
                 <h6 class="c-fff f-fM mt10">{{courseWebVo.buyCount}}</h6>
-              </aside>
-            </li>
-            <li>
-              <p>&nbsp;</p>
-              <aside>
-                <span class="c-fff f-fM">课时数</span>
-                <br>
-                <h6 class="c-fff f-fM mt10">20</h6>
-              </aside>
-            </li>
-            <li>
-              <p>&nbsp;</p>
-              <aside>
-                <span class="c-fff f-fM">浏览数</span>
-                <br>
-                <h6 class="c-fff f-fM mt10">501</h6>
               </aside>
             </li>
           </ol>

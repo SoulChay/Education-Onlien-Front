@@ -16,7 +16,7 @@
             <dd class="c-s-dl-li">
               <ul class="clearfix">
                 <li>
-                  <a title="全部" href="#">全部</a>
+                  <a title="全部" href="/course/">全部</a>
                 </li>
                 <li v-for="(item,index) in subjectNestedList" :key="index" :class="{active:oneIndex==index}">
                   <a :title="item.title" href="#" @click="searchOne(item.id,index)">{{item.title}}</a>

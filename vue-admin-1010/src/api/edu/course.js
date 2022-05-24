@@ -1,6 +1,21 @@
 import request from '@/utils/request'
 export default {
-    //1 添加课程信息
+    //条件分页查询
+    getCourseListPage(current,limit,courseQuery) {
+        return request({
+            url: `/eduservice/course/pageCourseCondition/${current}/${limit}`,
+            method: 'post',
+            data: courseQuery
+          })
+    },
+    //删除课程
+    deleteCourseId(id) {
+        return request({
+            url: `/eduservice/course/${id}`,
+            method: 'delete'
+        })
+    },
+    //添加课程信息
     addCourseInfo(courseInfo) {
         return request({
             url: '/eduservice/course/addCourseInfo',
@@ -8,7 +23,7 @@ export default {
             data:courseInfo
           })
     },
-    //2 查询所有讲师
+    //查询所有讲师
     getListTeacher() {
         return request({
             url: '/eduservice/teacher/findAll',
@@ -45,12 +60,10 @@ export default {
           })
     },
     //TODO 课程列表
-    //课程最终发布
     getListCourse() {
         return request({
             url: '/eduservice/course',
             method: 'get'
           })
     }
-
 }

@@ -34,9 +34,7 @@
                     :key="video.id">
                     <p>{{ video.title }}
 
-                <span class="acts">
-                    
-                    <el-button style="" type="text">编辑</el-button>
+                <span class="acts">  
                     <el-button type="text" @click="removeVideo(video.id)">删除</el-button>
                 </span>
                     </p>
@@ -235,7 +233,6 @@ export default {
         saveOrUpdateVideo() {
             this.addVideo()
         },
-
 //==============================章节操作====================================
         //删除章节
         removeChapter(chapterId) {
